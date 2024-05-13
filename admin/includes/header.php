@@ -7,7 +7,7 @@ include('includes/dbconnection.php');
 <header class="header fixed-top clearfix">
     <div class="brand">
         <a href="dashboard.php" class="logo">
-            Hello Sai
+            Hello Gargi
         </a>
         <div class="sidebar-toggle-box">
             <div class="fa fa-bars"></div>
