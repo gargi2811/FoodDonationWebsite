@@ -2,7 +2,7 @@
 <div class="copy-right">
     <div class="container">
         <div class="copy-lt">
-            <p> Developed By Sai and Pushkar </p>
+            <p> Developed By Team Onama </p>
         </div>
         <div class="copy-rt">
             <ul>

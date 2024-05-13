@@ -32,30 +32,29 @@ if (isset($_POST['submit'])) {
 
 
     <script type="application/x-javascript">
-    addEventListener("load", function() {
-        setTimeout(hideURLbar, 0);
-    }, false);
+        addEventListener("load", function() {
+            setTimeout(hideURLbar, 0);
+        }, false);
 
-    function hideURLbar() {
-        window.scrollTo(0, 1);
-    }
+        function hideURLbar() {
+            window.scrollTo(0, 1);
+        }
     </script>
 
-    <link href='http://fonts.googleapis.com/css?family=Droid+Serif:400,700,700italic,400italic' rel='stylesheet'
-        type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Droid+Serif:400,700,700italic,400italic' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
 
     <script type="text/javascript" src="js/move-top.js"></script>
     <script type="text/javascript" src="js/easing.js"></script>
     <script type="text/javascript">
-    jQuery(document).ready(function($) {
-        $(".scroll").click(function(event) {
-            event.preventDefault();
-            $('html,body').animate({
-                scrollTop: $(this.hash).offset().top
-            }, 900);
+        jQuery(document).ready(function($) {
+            $(".scroll").click(function(event) {
+                event.preventDefault();
+                $('html,body').animate({
+                    scrollTop: $(this.hash).offset().top
+                }, 900);
+            });
         });
-    });
     </script>
 
 </head>
@@ -73,7 +72,7 @@ if (isset($_POST['submit'])) {
             </div>
             <div class="contact-gds">
                 <div class="col-md-6 contact-top">
-                    <h3>Want to work with Sai and Pushkar?</h3>
+                    <h3>Want to work with Our team Onama?</h3>
                     <form action="#" method="post">
                         <div class="con-text">
                             <span>First Name </span>
@@ -85,8 +84,7 @@ if (isset($_POST['submit'])) {
                         </div>
                         <div class="con-text">
                             <span>Phone </span>
-                            <input type="text" class="form-control" placeholder="Phone" required="" name="phone"
-                                pattern="[0-9]+" maxlength="10">
+                            <input type="text" class="form-control" placeholder="Phone" required="" name="phone" pattern="[0-9]+" maxlength="10">
                         </div>
                         <div class="con-text">
                             <span>Your Email </span>
@@ -95,8 +93,7 @@ if (isset($_POST['submit'])) {
 
                         <div class="con-text">
                             <span>Your Message</span>
-                            <textarea class="form-control" rows="3" placeholder="Message.." required=""
-                                name="message"></textarea>
+                            <textarea class="form-control" rows="3" placeholder="Message.." required="" name="message"></textarea>
                         </div>
                         <button type="submit" class="btn btn-success" type="submit" name="submit">Send</button>
                 </div>
@@ -109,25 +106,25 @@ if (isset($_POST['submit'])) {
                     while ($row = mysqli_fetch_array($ret)) {
 
                     ?>
-                    <h3 class="info"> <?php echo $row['PageTitle']; ?></h3>
-                    <h4 class="mb-lg-3 mb-2">Address </h4>
-                    <p><?php echo $row['PageDescription']; ?></p>
+                        <h3 class="info"> <?php echo $row['PageTitle']; ?></h3>
+                        <h4 class="mb-lg-3 mb-2">Address </h4>
+                        <p><?php echo $row['PageDescription']; ?></p>
 
 
                 </div><?php } ?>
-                <div class="clearfix"> </div>
+            <div class="clearfix"> </div>
             </div>
         </div>
     </div>
 
     <?php include_once("includes/footer.php"); ?>
     <script type="text/javascript">
-    $(document).ready(function() {
+        $(document).ready(function() {
 
-        $().UItoTop({
-            easingType: 'easeOutQuart'
+            $().UItoTop({
+                easingType: 'easeOutQuart'
+            });
         });
-    });
     </script>
     <a href="#" id="toTop" style="display: block;"> <span id="toTopHover" style="opacity: 1;"> </span></a>
 
